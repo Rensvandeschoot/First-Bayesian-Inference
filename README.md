@@ -4,7 +4,7 @@ This Shiny App is designed to ease its users first contact with Bayesian statist
 
 The Shiny app is available at: [https://utrecht-university.shinyapps.io/bayesian_estimation/](https://utrecht-university.shinyapps.io/bayesian_estimation/). 
 
-<img src="fbi_overview.png" width="700">
+[![Overview of FBI Shiny App](fbi_overview.png)](https://utrecht-university.shinyapps.io/bayesian_estimation/)
 
 ## :gem: How can you profit from it?
 First of all, this app might be a useful tool for your teaching if you would like to familiarize your students with the basic logic of Bayesian inference. Second, feel free to use this material as a template for your own app. 
