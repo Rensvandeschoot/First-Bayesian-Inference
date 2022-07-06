@@ -1,12 +1,13 @@
-#ui.r
-ui <- fluidPage(
+
+ui <- fluidPage(title="Exploring Bayesian Estimation",
+#######################################################
   fluidRow(
     column(12, style="background:  #6699ff;
         padding: 20px; border-width: 20px; border-color: #fff;
            border-style: solid;",
-           h1("Exploring Bayesian Estimation", span(style = "font-weight: 300"),
+           h1("Exploring Bayesian Estimation (Version 1.1)", span(style = "font-weight: 300"),
               style="color: #fff; text-align: center;"),
-           p("Created by: Sonja D. Winter & Rens van de Schoot, Utrecht University",
+           p("Created by: Sonja D. Winter, Lion Behrens & Rens van de Schoot, Utrecht University",
              style="color: #fff; text-align: center;")
            )
   ),
@@ -22,7 +23,7 @@ ui <- fluidPage(
            conditionalPanel(
              condition = "input.prior == 'rnorm'",
              numericInput("mean", label = "Mean", value = 100),
-             numericInput("sd", label = "Standard Deviation", value = 15)
+             numericInput("var", label = "Variance", value = 10)
            ),
            conditionalPanel(
              condition = "input.prior == 'runif'",
@@ -32,16 +33,16 @@ ui <- fluidPage(
            conditionalPanel(
              condition = "input.prior == 'trnorm'",
              numericInput("meant", label = "Mean", value = 100),
-             numericInput("sdt", label = "Standard Deviation", value = 15),
+             numericInput("vart", label = "Variance", value = 10),
              numericInput("lbound", label = "Lower bound", value = 0),
              numericInput("ubound", label = "Higher bound", value = 150)
-           )
-    ),
-    column(4,
-           h2("2. Upload your data"),
+           ),
+           
+           br(),
+   
+           h2("2a. Upload your data"),
            p("Please submit data in .csv format with only one column of data
              and the variable name as the header."),
-           br(),
            fileInput(inputId="file", label = h3("Upload"),
                      accept = c(
                        'text/csv',
@@ -50,7 +51,24 @@ ui <- fluidPage(
                        'text/plain',
                        '.csv',
                        '.tsv'
-                     ))
+                     ))),
+           
+           
+           
+      column(4,     
+           h2("2b. Generate your data"), 
+           p("By specifying the parameters below, you can generate data from a truncated
+             normal distribution."),
+           br(),
+           numericInput("meant2", label = "Mean", value = 100),
+           numericInput("vart2", label = "Variance", value = 10),
+           numericInput("lbound2", label = "Lower bound", value = 40),
+           numericInput("ubound2", label = "Higher bound", value = 180), 
+           numericInput("n2", label = "Sample Size", value = 50),
+           
+           actionButton("generate", label = "Generate Data")
+           
+           
     ),
     column(4,
            h2("3. Find your posterior!"),
