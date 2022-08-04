@@ -25,7 +25,7 @@ Step 4: Let the software (analytically or via sampling using RJags) generate the
 
 
 ## :gem: How can you profit from it?
-First of all, this app might be a useful tool for your teaching if you would like to familiarize your students with the basic logic of Bayesian inference. Second, feel free to use this material as a template for your own app. 
+First of all, this app might be a useful tool for your teaching if you would like to familiarize your students with the basic logic of Bayesian inference, see also the [exercise](https://github.com/Rensvandeschoot/First-Bayesian-Inference/blob/main/EXERCISE.md) we created. Second, feel free to use this material as a template for your own app. 
 
 
 ## Reference
