@@ -24,7 +24,6 @@ Step 3: Generate data.
 Step 4: Let the software (analytically or via sampling using RJags) generate the posterior distribution.
 
 
-
 ## :gem: How can you profit from it?
 First of all, this app might be a useful tool for your teaching if you would like to familiarize your students with the basic logic of Bayesian inference. Second, feel free to use this material as a template for your own app. 
 
@@ -33,3 +32,6 @@ First of all, this app might be a useful tool for your teaching if you would lik
 
 Van de Schoot, R., Kaplan, D., Denissen, J., Asendorpf, J. B., Neyer, F. J., & Aken, M. A. (2014). A gentle introduction to Bayesian analysis: applications to developmental research. Child development, 85(3), 842-860. [DOI: 10.1111/cdev.12169](https://doi.org/10.1111/cdev.12169).
 
+## Contact
+
+For more information about the App, contact [Lion Behrens](https://www.linkedin.com/in/lion-behrens-7173ab102/), [Sonja Winter](https://www.linkedin.com/in/sonjawinter/), or [Rens van de Schoot](https://www.linkedin.com/in/rensvandeschoot/)
